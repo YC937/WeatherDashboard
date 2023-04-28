@@ -37,7 +37,7 @@ searchButton.click(function () {
             currentTemp.append("<p>" + "Humidity: " + response.main.humidity + "%" + "</p>");
             currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>");
             var urlUV = `https://api.openweathermap.org/data/2.5/uvi?appid=b8ecb570e32c2e5042581abd004b71bb&lat=${response.coord.lat}&lon=${response.coord.lon}`;
-
+            
             $.ajax({
                 url: urlUV,
                 method: "GET"
@@ -56,7 +56,6 @@ searchButton.click(function () {
             var fiveDayCard = $(".fiveDayCard").addClass("card-body");
             var fiveDayDiv = $(".fiveDayOne").addClass("card-text");
             fiveDayDiv.empty();
-
             day.forEach(function (i) {
                 var FiveDayTimeUTC1 = new Date(response.list[i].dt * 1000);
                 FiveDayTimeUTC1 = FiveDayTimeUTC1.toLocaleDateString("en-US");

@@ -5,6 +5,6 @@
 
 ### Summary
 * Use HTML, CSS, and Javascript to create a weather application 
-* Use an API call and JQuery to make dynamic changes to an HMTL document
-* This project utilizes the use of appending HTML pages 
+* Use API call and JQuery to make dynamic changes to an HMTL document
+* This website shows the using of appending HTML pages 
 * This website has three API calls
